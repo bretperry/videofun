@@ -1,0 +1,31 @@
+body{
+	font-family: futura, open sans;
+	box-sizing: border-box;
+
+}
+
+
+#container{
+	
+	width:  80%;
+}
+
+#playerBox{
+	width: 100%;
+	padding:  40px;
+	margin:  0 auto;
+	//border:  3px solid red;
+	background-color: #582727;
+}
+
+#video{
+	width:  100%;
+}
+
+#queue{
+	background-color: #582727;
+	padding: 40px;
+	width: 100%;
+	margin-top: 20px;
+
+}
