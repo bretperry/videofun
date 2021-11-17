@@ -17,15 +17,40 @@ body{
 	//border:  3px solid red;
 	background-color: #582727;
 }
-
-#video{
-	width:  100%;
+#videoWrap{
+	position: relative;
 }
+#video,#output{
+	width:  100%;
 
-#queue{
-	background-color: #582727;
-	padding: 40px;
-	width: 100%;
-	margin-top: 20px;
+}
+#output{
+	pointer-events: none;
+	position: absolute; 
+	top: 0; bottom: 0; right: 0; left: 0;
+}
+.annotation{
+	position: absolute;
+	pointer-events: none;
+	padding:  40px;
+	display: block;
+	bottom: 20px;
+		color: #fff;
+		opacity: 0;
+}
+.intro{
+	font-size: x-large;
+	text-align: center;
+	top: 0; bottom: 0; right: 0; left: 0;
+	margin: 10% 10% 20%;
+	padding: 10% auto;
+	background-color: rgba(0,0,0,.9);
+}
+.notes{
 
+}
+.upperRight{
+	width: 50%;
+	margin-left: 50%;
+	top: 0;
 }
