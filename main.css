@@ -1,27 +1,31 @@
 body{
 	font-family: futura, open sans;
 	box-sizing: border-box;
-
+	background-color: #e5e0e0;
+	transition: all 1s ease-out;
 }
-
+h1{text-align: center; color: #ada0a0}
 
 #container{
-	
+	margin: 0 auto;
 	width:  80%;
 }
 
-#playerBox, #videoContainer{
-	width: 100%;
+#playerBox {
 	padding:  40px;
 	margin:  0 auto;
-	//border:  3px solid red;
 	background-color: #582727;
+	border-radius: 8px;
+	background-color: #f1e9e9;
 }
 #videoWrap{
 	position: relative;
+	
 }
 #video,#output{
+	transition: all 1s ease-out;
 	width:  100%;
+	height: auto;
 
 }
 #output{
@@ -30,6 +34,11 @@ body{
 	top: 0; bottom: 0; right: 0; left: 0;
 }
 .annotation{
+/*	-webkit-transition: background-color 2s ease-out;
+  	-moz-transition: background-color 2s ease-out;
+  	-o-transition: background-color 2s ease-out;
+  	*/
+  	transition: all .24s ease-out;
 	position: absolute;
 	pointer-events: none;
 	padding:  40px;
@@ -42,9 +51,12 @@ body{
 	font-size: x-large;
 	text-align: center;
 	top: 0; bottom: 0; right: 0; left: 0;
-	margin: 10% 10% 20%;
+	margin: 8% 10% 16%;
 	padding: 10% auto;
-	background-color: rgba(0,0,0,.9);
+	background-color: rgba(0,0,0,.55);
+}
+div.opaque{
+	background-color: rgba(0,0,0,.84);
 }
 .notes{
 
@@ -53,4 +65,5 @@ body{
 	width: 50%;
 	margin-left: 50%;
 	top: 0;
+	padding-right: 20px;
 }
